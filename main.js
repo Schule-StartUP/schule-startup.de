@@ -6,6 +6,25 @@ const menuBtn = document.querySelector(".menu-btn");
 menuBtn.addEventListener("click", () => {
     menu.classList.toggle('nav-toggle');
 });
+document.addEventListener("DOMContentLoaded", function () {
+  const projectsSection = document.querySelector(".projects");
+  const postsSection = document.querySelector(".posts");
+
+  window.addEventListener("scroll", function () {
+      const scrollPosition = window.scrollY;
+      const windowHeight = window.innerHeight;
+
+      // Überprüfe, ob der Abschnitt "Projects" im Sichtfeld ist
+      if (scrollPosition > projectsSection.offsetTop - windowHeight / 1.5) {
+          projectsSection.classList.add("active");
+      }
+
+      // Überprüfe, ob der Abschnitt "Posts" im Sichtfeld ist
+      if (scrollPosition > postsSection.offsetTop - windowHeight / 1.5) {
+          postsSection.classList.add("active");
+      }
+  });
+});
 
 //Get the current year and add it into the HTML 
 document.querySelector(".year").innerHTML = new Date().getFullYear();

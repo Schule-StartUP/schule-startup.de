@@ -8,16 +8,6 @@ body {
 
 
 /* Input Feld Design Anfang */
-.menu a:hover,
-.menu .media-icon a:hover i,
-.menu .media-icon a:hover i {
-    font-size: 1.1em; /* Passen Sie die Schriftgröße nach Bedarf an */
-}
-.social.media a:hover i {
-    font-size: 1.7em; /* Passen Sie die Schriftgröße der Icons in der social media-Klasse nach Bedarf an */
-}
-
-
 
 .inputBox {
     position: relative;
@@ -25,18 +15,7 @@ body {
     margin-bottom: 35px;
 }
 
-.projects,
-.posts {
-    opacity: 0;
-    transform: translateY(50px); /* Verschiebe die Elemente um 50 Pixel nach unten */
-    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-}
 
-.projects.active,
-.posts.active {
-    opacity: 1;
-    transform: translateY(0);
-}
 
 
 .inputBox input {
