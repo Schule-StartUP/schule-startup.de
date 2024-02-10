@@ -19,7 +19,7 @@ document.querySelector(".inputbtn").addEventListener("click", () => {
         To : input,
         From : "schule.startup@outlook.de",
         Subject : "Informationen für die Teilnahme",
-        Body : "Sehr geehrte Teilnehmende, <br>\
+        Body : "Sehr geehrte Teilnehmenden, <br>\
         auf unser Website findet ihr eine Vorlage für euren Businessplan. Beachtet bei der Bearbeitung bitte folgende Dinge: <br><br>\
         • Formalia:  <br>\
         Arial, 11pt, Zeilenabstand 1,5    <br><br>\
